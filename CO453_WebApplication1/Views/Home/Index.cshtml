@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<section class="jumbotron text-center">
+    <h1 class="display-4">Posh Nosh Website</h1>
+    <p>Welcome to the Posh Nosh website.</p>
+</section>
+
+
+<section class="row">
+    <article class="col">
+        <div class="card" style="14rem: 14rem;">
+            <img src="~/Images/Pasta.jpg" class="card-img-top" alt="Meal Image">
+            <div class="card-body">
+                <h5 class="card-title">Select your meal!</h5>
+                <p class="card-text">Please make your choice from our menu of excellent food!</p>
+                <a class= "btn btn-info" >Choose your Meal!</a>
+            </div>
+        </div>
+    </article>
+
+
+    <article class="col">
+        <div class="card" style="14rem: 14rem;">
+            <img src="~/Images/Foodnotes.jpg" class="card-img-top" alt="Meal Image">
+            <div class="card-body">
+                <h5 class="card-title">Enter your details.</h5>
+                <p class="card-text">Please give us your information to have your meal prepared.</p>
+                <a asp-controller="Home", asp-action="Customer" class="btn btn-success">Enter details.</a>
+            </div>
+</article>
+
+
+    <article class="col">
+        <class="card" style="14rem: 14rem;">
+            <img src="~/Images/plspay.jpg" class="card-img-top" alt="Online payments">
+            <div class="card-body">
+                <h5 class="card-title">Pay for order</h5>
+                <p class="card-text">Enter your final payment details to complete the process.</p>
+                <a class="btn btn-warning" asb-controller ="Home", asp-action="PaymentDetails">Pay.</a>
+            </div>
+</article>
+
+</section>
