@@ -9,6 +9,9 @@ using CO453_WebApplication1.Models;
 
 namespace CO453_WebApplication1.Controllers
 {
+    /// <summary>
+    /// Danny Grace Posh Nosh website
+    /// </summary>
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace CO453_WebApplication1.Models
 {
+    /// <summary>
+    /// Danny Grace Posh Nosh website
+    /// </summary>
     public class Customer
     {
         public int CustomerID { get; set; }

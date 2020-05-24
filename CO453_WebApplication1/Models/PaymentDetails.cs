@@ -8,6 +8,9 @@ namespace CO453_WebApplication1.Models
 {
     public class PaymentDetails
     {
+        /// <summary>
+        /// Danny Grace Posh Nosh website
+        /// </summary>
         [Required]
         public string FirstName { get; set; }
         [Required]
