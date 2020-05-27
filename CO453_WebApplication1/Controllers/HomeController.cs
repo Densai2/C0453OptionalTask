@@ -82,6 +82,27 @@ namespace CO453_WebApplication1.Controllers
 
             return RedirectToAction("Index");
         }
+        [HttpGet]
+        public IActionResult Menu()
+        {
+            Menu menu = new Menu
+            {
+                Starter = "Garlic bread",
+                Main = "Tomato pasta",
+                Dessert = "Chocolate cake",
+                Drink = "Red wine"
+
+            };
+            return View(menu);
+        }
+        [HttpPost]
+        public IActionResult Menu (Menu menu)
+        {
+            ViewData["Menu"] = menu;
+            ViewBag.Menu = menu;
+
+            return RedirectToAction("Index");
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
